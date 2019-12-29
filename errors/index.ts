@@ -2,7 +2,6 @@ import { Context, Middleware } from 'koa'
 import { isRenderable } from '../types/renderable'
 import { UnknownError } from './default'
 import { NotFound } from './not_found'
-import { isEmpty } from 'lodash'
 import Debug from 'debug'
 
 const debug = Debug('')
@@ -26,7 +25,7 @@ export const ErrorHandler: () => Middleware = () => async (
     new UnknownError().render(ctx)
   }
 
-  if (!ctx.body || (isEmpty(ctx.body) && !Array.isArray(ctx.body))) {
+  if (ctx.body === undefined) {
     new NotFound().render(ctx)
   }
 }
