@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "module": "commonjs",
+    "typeRoots": ["node_modules/@types", "@types"],
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "declaration": true
+  },
+  "exclude": ["node_modules", "build"]
+}
