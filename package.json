@@ -1,8 +1,8 @@
 {
-  "name": "boilerplate-typescript-fullstack",
+  "name": "boilerplate-typescript",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/app.ts",
   "scripts": {
     "tsnode": "ts-node",
     "build": "tsc",
